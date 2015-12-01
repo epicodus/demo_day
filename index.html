@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Epicodus Demo Day 2015</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://gridspree.io/ss/EnRYJJKy7YYB6Wn6m3yce5.js"></script>
+  </head>
+  <body class="container-fluid">
+    <script type="x-gridspree-template">
+    <h1>Epicodus Demo Day 2015</h1>
+      <div class="row">
+        <div class="table-responsive">
+          <table class='table table-hover table-bordered'>
+            <th>Student</th>
+            <th>Project Link</th>
+            <th>LinkedIn/Portfolio site</th>
+            <th>Github</th>
+            <th>Project GitHub repo</th>
+            <th>Project Technical info</th>
+            {{#rows}}
+              <tr>
+                <td>{{Your first and last name}}</td>
+                <td><a href="{{Link to the project you're presenting}}">{{Link to the project you're presenting}}</a></td>
+                <td><a href="{{Link to your LinkedIn or portfolio site}}">{{Link to your LinkedIn or portfolio site}}</a></td>
+                <td><a href="{{Link to your Github}}">{{Link to your Github}}</a></td>
+                <td><a href="{{Link to your project's Github repo}}">{{Link to your project's Github repo}}</a></td>
+                <td>{{List the languages or tools you used for your project}}</td>
+              </tr>
+            {{/rows}}
+          </table>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>
