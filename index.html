@@ -5,6 +5,7 @@
     <title>Epicodus Demo Day 2015</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/css/sortable-theme-bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="tabletop.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
@@ -13,7 +14,7 @@
 
     <div class="row">
       <div class="table-responsive">
-        <table class='table table-hover table-bordered' data-sortable>
+        <table id='main-table' class='table table-hover table-bordered'>
           <thead>
             <tr>
               <th>Student</th>
@@ -25,22 +26,8 @@
               <th>Project Technical info</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>{{Your first and last name}}</td>
-              <td>{{Language}}</td>
-              <td><a target='_blank' href={{Link to the project you're presenting}}>{{Link to the project you're presenting}}</a></td>
-              <td><a target='_blank' href={{Link to your LinkedIn or portfolio site}}>{{Link to your LinkedIn or portfolio site}}</a></td>
-              <td><a target='_blank' href={{Link to your Github}}>{{Link to your Github}}</a></td>
-              <td><a target='_blank' href={{Link to your project's Github repo}}>{{Link to your project's Github repo}}</a></td>
-              <td>{{List the languages or tools you used for your project}}</td>
-            </tr>
-          </tbody>
         </table>
       </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js"></script>
-    <script>Sortable.init();</script>
   </body>
 </html>
