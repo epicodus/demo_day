@@ -34,4 +34,11 @@ function drawTable(sheets, tabletop) {
     tbody.append(html_row);
   }
   table.append(tbody);
+
+  $('#main-table').DataTable({
+    paging: false,
+    autoWidth: false,
+    searching: false,
+    info: false
+  });
 }
