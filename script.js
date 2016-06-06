@@ -1,6 +1,6 @@
 window.onload = function() { init() };
 
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1mOpVH9eJM-EN7he0tQIjNPeceJGncwxUftdYbvG92oo/pubhtml?gid=1445492928&single=true';
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1NWkttEaz3WkDB_nLQEwkKH6LJP3RE6f97qpCjUwtDbE/pubhtml';
 
 function init() {
   Tabletop.init( {
