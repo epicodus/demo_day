@@ -1,6 +1,7 @@
 window.onload = function() { init() };
 
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1hMGMJriWaavla_2Pf-NfuL0HRTfhKGkyKLYWZAsrjWI/pubhtml';
+// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1hMGMJriWaavla_2Pf-NfuL0HRTfhKGkyKLYWZAsrjWI/pubhtml';
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/15W-tVoLLIYyaqRwBA9nmkC3_9-Hx_X9SgE-cxGbjdXE/pubhtml?gid=1862368927&single=true';
 
 function init() {
   Tabletop.init( {
@@ -24,11 +25,13 @@ function drawTable(sheets, tabletop) {
     var student = students[i];
     var html_row = $("<tr></tr>");
     for(var j = 0; j < column_names.length; j++) {
-      var column_name = column_names[j];
-      if (student[column_name].indexOf('http') > -1) {
-        $("<td><a target='_blank' href='" + student[column_name] + "'>" + student[column_name] + "</a></td>").appendTo(html_row);
-      } else {
-        $("<td></td>").text(student[column_name]).appendTo(html_row);
+      if(j===0 || j===2) { // TEMPORARILY SHOW ONLY NAME & LINKEDIN
+        var column_name = column_names[j];
+        if (student[column_name].indexOf('http') > -1) {
+          $("<td><a target='_blank' href='" + student[column_name] + "'>" + student[column_name] + "</a></td>").appendTo(html_row);
+        } else {
+          $("<td></td>").text(student[column_name]).appendTo(html_row);
+        }
       }
     }
     tbody.append(html_row);
