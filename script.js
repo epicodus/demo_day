@@ -1,8 +1,5 @@
 window.onload = function() { init() };
 
-// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1hMGMJriWaavla_2Pf-NfuL0HRTfhKGkyKLYWZAsrjWI/pubhtml';
-// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/15W-tVoLLIYyaqRwBA9nmkC3_9-Hx_X9SgE-cxGbjdXE/pubhtml?gid=1862368927&single=true';
-// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Cuu3yCxdJicN-YSo2RJB9lzMyDefNcfhJKiALMebPhw/pubhtml?gid=305673636&single=true';
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/14rhSKJaKOQB9NWp4VAahnkgBl_tBDCbnAsyOth4-5Lo/pubhtml';
 
 function init() {
