@@ -1,6 +1,6 @@
 window.onload = function() { init() };
 
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQg3ZIbPxLCBAKBcioQit3-rPq9SfgOqUgCufFw9TQUOd5XApsWicMTjV2cLc4pE42IBGeamgNkM959/pubhtml';
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1_URqEAuHYA53rAHaQnkSMmkz-VPbq4x1DZjldlkZ9MU/pubhtml';
 
 function init() {
   Tabletop.init( {
